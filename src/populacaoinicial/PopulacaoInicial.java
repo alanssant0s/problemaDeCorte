@@ -1,6 +1,7 @@
 package populacaoinicial;
 
 import cromossomo.Cromossomo;
+import cromossomo.ICromossomo;
 import model.Bar;
 import model.Corte;
 
@@ -13,8 +14,8 @@ import java.util.Random;
  */
 public class PopulacaoInicial implements IPopulacaoInicial {
 
-    public List<Cromossomo> make(int tamMax, List<Corte> cortes, int numPop) {
-        List<Cromossomo> cromossomos = new ArrayList<>();
+    public List<ICromossomo> make(int tamMax, List<Corte> cortes, int numPop) {
+        List<ICromossomo> cromossomos = new ArrayList<>();
         for (int quant = 0; quant < numPop; quant++) {
             List<Corte> cortesI = new ArrayList<>();
             for (Corte corte : cortes) {
