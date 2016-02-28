@@ -19,4 +19,14 @@ public class Corte {
         this.quant = quant;
         this.numero = numero;
     }
+
+    @Override
+    public String toString() {
+        return "Corte{" +
+                "tam=" + tam +
+                ", quant=" + quant +
+                ", numero=" + numero +
+                '}';
+    }
 }
+
